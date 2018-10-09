@@ -13,7 +13,7 @@
 <div class="row" style="margin-right: 10px;margin-left: 10px;">
         <div class="col-sm-4 col-sm-offset-3 blogShort" v-for="item in Articals">
                 <a :href="'#/app/davvag-cms-generalapps/a?id='+item.id"><h3>{{ unescape(item.title) }}</h3></a>
-                <img v-if="item.imgname" :src="'components/dock/soss-uploader/service/get/d_cms_artical/'+item.id+'-'+item.imgname" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                <img v-if="item.imgname" :src="'components/dock/soss-uploader/service/get/d_cms_artical/'+item.id+'-'+item.imgname" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail2">
                 
                 <em>{{ item.createdate | dateformate }}</em>
                 <article v-html="marked(unescape(item.summery))"></article>
