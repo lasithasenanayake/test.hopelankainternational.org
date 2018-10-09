@@ -16,7 +16,7 @@
                 <img v-if="item.imgname" :src="'components/dock/soss-uploader/service/get/d_cms_artical/'+item.id+'-'+item.imgname" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail2">
                 
                 <em>{{ item.createdate | dateformate }}</em>
-                <article v-html="marked(unescape(item.summery))"></article>
+                <article class="articalHight" v-html="marked(unescape(item.summery))"></article>
                 <a class="pull-right marginBottom10" :href="'#/app/davvag-cms-generalapps/a?id='+item.id">READ MORE</a> 
         </div>
         
