@@ -37,6 +37,7 @@ WEBDOCK.component().register(function(exports){
             else{
                 //bindData.product={title="Artical was not found",content:"ssssss"};
             }
+            
            
         },
         computed: {
