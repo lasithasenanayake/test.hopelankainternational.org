@@ -20,6 +20,7 @@ WEBDOCK.component().register(function(exports){
                         .then(function(r){
                             console.log(JSON.stringify(r));
                             if(r.success){
+                                r.result.d_cms_artical_v1.sort((a,b) => (moment(a.createdate, "MM-DD-YYYY hh:mm:ss").format('YYYYMMDDhhmm') > moment(b.createdate, "MM-DD-YYYY hh:mm:ss").format('YYYYMMDDhhmm')) ? -1 : ((moment(b.createdate, "MM-DD-YYYY hh:mm:ss").format('YYYYMMDDhhmm') > moment(a.createdate, "MM-DD-YYYY hh:mm:ss").format('YYYYMMDDhhmm')) ? 1 : 0)); 
                                 bindData.Articals= r.result.d_cms_artical_v1;
                             }
                         })
