@@ -62,8 +62,6 @@ WEBDOCK.component().register(function(exports){
                                 if(r.result.d_cms_artical_v1.length!=0)
                                 bindData.product= r.result.d_cms_artical_v1[0];
                                 document.title = unescape(bindData.product.title);
-
-                                
                                 bindData.product.title=unescape(bindData.product.title);
                                 bindData.product.content=unescape(bindData.product.content);
                                 bindData.product.summery=unescape(bindData.product.summery);

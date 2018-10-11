@@ -10,13 +10,17 @@
   <table class="table">
     <thead>
       <tr>
+          <th>ID</th>
+        <th>Date</th>
         <th>Title</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="item in items">
-        <td>{{ item.title }}</td>
+        <td>{{ item.id }}</td>
+        <td>{{ item.createdate }}</td>
+        <td>{{ item.title | foramtdata}}</td>
         <td>
             <div class="btn-group pull-right" role="group" aria-label="..." style="margin: 10px;">
                 <a class="btn btn-primary" v-on:click="navigate(item.id)" ><span class="glyphicon glyphicon-pencil"></span> Edit</a>
