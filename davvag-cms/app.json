@@ -70,6 +70,10 @@
         "partial-homeblogdetail":{
             "type":"partial",
             "location":"partials"
+        },
+        "partial-donation":{
+            "type":"partial",
+            "location":"partials"
         }
     },
     "description":{
@@ -93,6 +97,7 @@
                     "/" : "partial-home",
                     "/app/@appName/*appRoute" : "partial-app",
                     "/home" : "partial-homeblogdetail",
+                    "/donate" : "partial-donation",
                     "/notFound": "partial-404",
                     "/account": "partial-account",
                     "/profile": "partial-profile",

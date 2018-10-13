@@ -24,10 +24,10 @@
         <td>{{ item.title | foramtdata}}</td>
         <td>
           <label class="radio-inline" for="feature-0">
-            <input type="radio" id="feature-0" value="y" :name="'feature'+item.id" v-model="item.boost">Yes
+            Yes<input type="radio" id="feature-0" value="y" :name="'feature'+item.id" v-model="item.boost">
           </label> 
           <label class="radio-inline" for="feature-1">
-            <input type="radio" id="feature-1" value="n" :name="'feature'+item.id" v-model="item.boost">No
+            No<input type="radio" id="feature-1" value="n" :name="'feature'+item.id" v-model="item.boost">
           </label> 
         </td>
         <td>
