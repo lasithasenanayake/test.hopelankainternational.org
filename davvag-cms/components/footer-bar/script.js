@@ -11,7 +11,7 @@ WEBDOCK.component().register(function(exports){
             gpluse:undefined,
             twitter:undefined,
             instergram:undefined,
-            contact:"+94776636153",
+            contact:"+94777133777",
             appData : {
                 title:""
             },
@@ -44,6 +44,7 @@ WEBDOCK.component().register(function(exports){
     exports.onReady = function(element){
         vueData.el = '#' + $(element).attr('id');
         var handler  = exports.getComponent("auth-handler");
+        document.title="";
         console.log(getCookie("securityToken"));
         handler.services.Session(getCookie("securityToken"))
                 .then(function(result){
